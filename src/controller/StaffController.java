@@ -1,4 +1,4 @@
-// package controller;
+package controller;
 
 import model.classess.Karyawan;
 import model.classess.Dosen;

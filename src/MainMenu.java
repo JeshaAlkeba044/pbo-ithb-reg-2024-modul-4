@@ -1,10 +1,10 @@
 import javax.swing.*;
 import javax.swing.text.View;
 
-// import controller.UserController;
-// import controller.MahasiswaController;
-// import controller.DosenController;
-// import controller.StaffController;
+import controller.UserController;
+import controller.MahasiswaController;
+import controller.DosenController;
+import controller.StaffController;
 
 public class MainMenu {
     public static void main(String[] args) {
@@ -43,25 +43,25 @@ public class MainMenu {
     private static void handleMenuChoice(String choice) {
         switch (choice) {
             case "Print UserData":
-                new PrintUserData();
+                UserController.PrintUserData();
                 break;
             case "Print Nilai Akhir Mahasiswa":
-                new PrintNilaiAkhir();
+                MahasiswaController.PrintNilaiAkhir();
                 break;
             case "Print Rata-Rata Nilai Akhir":
-                new PrintNilaiAvgView();
+                // MahasiswaController.printNilaiAvgView();
                 break;
             case "Print Mahasiswa Tidak Lulus":
-                new PrintJumlahMhsView();
+                // MahasiswaController.PrintJumlahMhsView();
                 break;
             case "Print Matkul Ambil Mahasiswa":
-                new PrintMatkulAmbil();
+                new PrintMatkulAmbilView();
                 break;
             case "Print Total Jam Mengajar Dosen":
-                new PrintJamMengajar();
+                DosenController.PrintJamMengajar();
                 break;
             case "Print Gaji Staff":
-                new PrintGajiStaff();
+                StaffController.PrintGajiStaff();
                 break;
             default:
                 JOptionPane.showMessageDialog(null, "Opsi tidak valid!", "Error", JOptionPane.ERROR_MESSAGE);

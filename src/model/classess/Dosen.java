@@ -11,7 +11,7 @@ public class Dosen {
     private String departemen;
     private List<Presensi> presensiList;
 
-    public Dosen(String nama, String alamat, String ttl, String telepon, String nik, String departemen, List<Presensi> presensiList) {
+    public Dosen(String nama, String alamat, String ttl, String telepon, int nik, String departemen, int presensiList) {
         this.nama = nama;
         this.alamat = alamat;
         this.ttl = ttl;
